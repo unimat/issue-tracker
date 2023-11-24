@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">                           
+    <html lang="en" className={inter.variable}>                           
       <body className={inter.variable}>
         <Theme accentColor="purple" panelBackground="solid">
           <NavBar />
