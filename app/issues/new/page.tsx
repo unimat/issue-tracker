@@ -46,17 +46,17 @@ const NewIssuePage = () => {
         <TextField.Root>
           <TextField.Input placeholder='Title' {...register('title')} />
         </TextField.Root>
-          <ErrorMessage> 
-            {errors.title?.message}
-          </ErrorMessage>
+        <ErrorMessage> 
+          {errors.title?.message}
+        </ErrorMessage>
         <Controller 
           name="description"
           control={control}
           render={({ field }) => <SimpleMDE placeholder='Description' {...field} />}
         />
-          <ErrorMessage> 
-            {errors.description?.message}
-          </ErrorMessage>
+        <ErrorMessage> 
+          {errors.description?.message}
+        </ErrorMessage>
         <Button>Submit New Issue</Button>
       </form>
     </div>
